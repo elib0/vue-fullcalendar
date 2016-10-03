@@ -81,7 +81,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), true)
 	  if (!hotAPI.compatible) return
-	  var id = "/Users/SunnyWang/code/vue-fullcalendar/src/fullCalendar.vue"
+	  var id = "C:\\Users\\chaveze\\Desktop\\vue-fullcalendar\\src\\fullCalendar.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -105,8 +105,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../node_modules/.npminstall/css-loader/0.23.1/css-loader/index.js!./../node_modules/.npminstall/vue-loader/7.5.3/vue-loader/lib/style-rewriter.js?id=_v-3e333dbe&file=fullCalendar.vue!./../node_modules/.npminstall/sass-loader/3.2.3/sass-loader/index.js!./../node_modules/.npminstall/vue-loader/7.5.3/vue-loader/lib/selector.js?type=style&index=0!./fullCalendar.vue", function() {
-				var newContent = require("!!./../node_modules/.npminstall/css-loader/0.23.1/css-loader/index.js!./../node_modules/.npminstall/vue-loader/7.5.3/vue-loader/lib/style-rewriter.js?id=_v-3e333dbe&file=fullCalendar.vue!./../node_modules/.npminstall/sass-loader/3.2.3/sass-loader/index.js!./../node_modules/.npminstall/vue-loader/7.5.3/vue-loader/lib/selector.js?type=style&index=0!./fullCalendar.vue");
+			module.hot.accept("!!./../node_modules/css-loader/index.js!./../node_modules/vue-loader/lib/style-rewriter.js?id=_v-00f9e5c8&file=fullCalendar.vue!./../node_modules/sass-loader/index.js!./../node_modules/vue-loader/lib/selector.js?type=style&index=0!./fullCalendar.vue", function() {
+				var newContent = require("!!./../node_modules/css-loader/index.js!./../node_modules/vue-loader/lib/style-rewriter.js?id=_v-00f9e5c8&file=fullCalendar.vue!./../node_modules/sass-loader/index.js!./../node_modules/vue-loader/lib/selector.js?type=style&index=0!./fullCalendar.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -568,7 +568,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), true)
 	  if (!hotAPI.compatible) return
-	  var id = "/Users/SunnyWang/code/vue-fullcalendar/src/components/body.vue"
+	  var id = "C:\\Users\\chaveze\\Desktop\\vue-fullcalendar\\src\\components\\body.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -592,8 +592,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/.npminstall/css-loader/0.23.1/css-loader/index.js!./../../node_modules/.npminstall/vue-loader/7.5.3/vue-loader/lib/style-rewriter.js?id=_v-734054ba&file=body.vue!./../../node_modules/.npminstall/sass-loader/3.2.3/sass-loader/index.js!./../../node_modules/.npminstall/vue-loader/7.5.3/vue-loader/lib/selector.js?type=style&index=0!./body.vue", function() {
-				var newContent = require("!!./../../node_modules/.npminstall/css-loader/0.23.1/css-loader/index.js!./../../node_modules/.npminstall/vue-loader/7.5.3/vue-loader/lib/style-rewriter.js?id=_v-734054ba&file=body.vue!./../../node_modules/.npminstall/sass-loader/3.2.3/sass-loader/index.js!./../../node_modules/.npminstall/vue-loader/7.5.3/vue-loader/lib/selector.js?type=style&index=0!./body.vue");
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-69dc63c9&file=body.vue!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./body.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-69dc63c9&file=body.vue!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./body.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -1100,7 +1100,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 13 */
 /***/ function(module, exports) {
 
-	module.exports = "\n  <div class=\"full-calendar-body\">\n    <div class=\"weeks\">\n      <strong class=\"week\" v-for=\"week in weekNames\">{{week}}</strong>\n    </div>\n    <div class=\"dates\" v-el:dates>\n      <div calss=\"dates-bg\">\n        <div class=\"week-row\" v-for=\"week in currentDates\">\n          <div class=\"day-cell\" v-for=\"day in week\"\n            :class=\"{'today' : day.isToday,\n              'not-cur-month' : !day.isCurMonth}\">\n            <p class=\"day-number\">{{day.monthDay}}</p>\n          </div>\n        </div>\n      </div>\n\n      <!-- absolute so we can make dynamic td -->\n      <div class=\"dates-events\">\n        <div class=\"events-week\" v-for=\"week in currentDates\">\n          <div class=\"events-day\" v-for=\"day in week\" track-by=\"$index\"\n            :class=\"{'today' : day.isToday,\n              'not-cur-month' : !day.isCurMonth}\" @click.stop=\"dayClick(day.date, $event)\">\n            <p class=\"day-number\">{{day.monthDay}}</p>\n            <div class=\"event-box\">\n              <p class=\"event-item\" v-for=\"event in day.events\" v-show=\"event.cellIndex <= eventLimit\"\n                 :class=\"[classNames(event.cssClass), {\n                  'is-start'   : isStart(event.start, day.date),\n                  'is-end'     : isEnd(event.end,day.date),\n                  'is-opacity' : !event.isShow\n                  }]\" \n                @click=\"eventClick(event,$event)\">\n                {{event | isBegin day.date day.weekDay}}\n              </p>\n              <p v-if=\"day.events.length > eventLimit\"\n                class=\"more-link\" @click.stop=\"selectThisDay(day, $event)\">\n                + {{day.events[day.events.length -1].cellIndex - eventLimit}} more\n              </p>\n            </div>\n          </div>\n        </div>\n      </div>\n\n      <!-- full events when click show more -->\n      <div class=\"more-events\" v-show=\"showMore\"\n        :style=\"{left: morePos.left + 'px', top: morePos.top + 'px'}\">\n        <div class=\"more-header\">\n          <span class=\"title\">{{selectDay.date | moreTitle }}</span>\n          <span class=\"close\" @click.stop=\"showMore = false\">x</span>\n        </div>\n        <div class=\"more-body\">\n          <ul class=\"body-list\">\n            <li v-for=\"event in selectDay.events\"\n              v-show=\"event.isShow\" class=\"body-item\"\n              @click=\"eventClick(event,$event)\">\n              {{event.title}}\n            </li>\n          </ul>\n        </div>\n      </div>\n\n      <slot name=\"body-card\">\n\n      </slot>\n\n    </div>\n  </div>\n";
+	module.exports = "\r\n  <div class=\"full-calendar-body\">\r\n    <div class=\"weeks\">\r\n      <strong class=\"week\" v-for=\"week in weekNames\">{{week}}</strong>\r\n    </div>\r\n    <div class=\"dates\" v-el:dates>\r\n      <div calss=\"dates-bg\">\r\n        <div class=\"week-row\" v-for=\"week in currentDates\">\r\n          <div class=\"day-cell\" v-for=\"day in week\"\r\n            :class=\"{'today' : day.isToday,\r\n              'not-cur-month' : !day.isCurMonth}\">\r\n            <p class=\"day-number\">{{day.monthDay}}</p>\r\n          </div>\r\n        </div>\r\n      </div>\r\n\r\n      <!-- absolute so we can make dynamic td -->\r\n      <div class=\"dates-events\">\r\n        <div class=\"events-week\" v-for=\"week in currentDates\">\r\n          <div class=\"events-day\" v-for=\"day in week\" track-by=\"$index\"\r\n            :class=\"{'today' : day.isToday,\r\n              'not-cur-month' : !day.isCurMonth}\" @click.stop=\"dayClick(day.date, $event)\">\r\n            <p class=\"day-number\">{{day.monthDay}}</p>\r\n            <div class=\"event-box\">\r\n              <p class=\"event-item\" v-for=\"event in day.events\" v-show=\"event.cellIndex <= eventLimit\"\r\n                 :class=\"[classNames(event.cssClass), {\r\n                  'is-start'   : isStart(event.start, day.date),\r\n                  'is-end'     : isEnd(event.end,day.date),\r\n                  'is-opacity' : !event.isShow\r\n                  }]\" \r\n                @click=\"eventClick(event,$event)\">\r\n                {{event | isBegin day.date day.weekDay}}\r\n              </p>\r\n              <p v-if=\"day.events.length > eventLimit\"\r\n                class=\"more-link\" @click.stop=\"selectThisDay(day, $event)\">\r\n                + {{day.events[day.events.length -1].cellIndex - eventLimit}} more\r\n              </p>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n\r\n      <!-- full events when click show more -->\r\n      <div class=\"more-events\" v-show=\"showMore\"\r\n        :style=\"{left: morePos.left + 'px', top: morePos.top + 'px'}\">\r\n        <div class=\"more-header\">\r\n          <span class=\"title\">{{selectDay.date | moreTitle }}</span>\r\n          <span class=\"close\" @click.stop=\"showMore = false\">x</span>\r\n        </div>\r\n        <div class=\"more-body\">\r\n          <ul class=\"body-list\">\r\n            <li v-for=\"event in selectDay.events\"\r\n              v-show=\"event.isShow\" class=\"body-item\"\r\n              @click=\"eventClick(event,$event)\">\r\n              {{event.title}}\r\n            </li>\r\n          </ul>\r\n        </div>\r\n      </div>\r\n\r\n      <slot name=\"body-card\">\r\n\r\n      </slot>\r\n\r\n    </div>\r\n  </div>\r\n";
 
 /***/ },
 /* 14 */
@@ -1117,7 +1117,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), true)
 	  if (!hotAPI.compatible) return
-	  var id = "/Users/SunnyWang/code/vue-fullcalendar/src/components/header.vue"
+	  var id = "C:\\Users\\chaveze\\Desktop\\vue-fullcalendar\\src\\components\\header.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -1141,8 +1141,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/.npminstall/css-loader/0.23.1/css-loader/index.js!./../../node_modules/.npminstall/vue-loader/7.5.3/vue-loader/lib/style-rewriter.js?id=_v-62863025&file=header.vue!./../../node_modules/.npminstall/sass-loader/3.2.3/sass-loader/index.js!./../../node_modules/.npminstall/vue-loader/7.5.3/vue-loader/lib/selector.js?type=style&index=0!./header.vue", function() {
-				var newContent = require("!!./../../node_modules/.npminstall/css-loader/0.23.1/css-loader/index.js!./../../node_modules/.npminstall/vue-loader/7.5.3/vue-loader/lib/style-rewriter.js?id=_v-62863025&file=header.vue!./../../node_modules/.npminstall/sass-loader/3.2.3/sass-loader/index.js!./../../node_modules/.npminstall/vue-loader/7.5.3/vue-loader/lib/selector.js?type=style&index=0!./header.vue");
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-225ab774&file=header.vue!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./header.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-225ab774&file=header.vue!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./header.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -1274,13 +1274,13 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 18 */
 /***/ function(module, exports) {
 
-	module.exports = "\n  <div class=\"full-calendar-header\">\n    <div class=\"header-left\">\n      <slot name=\"header-left\">\n      </slot>\n    </div>\n    <div class=\"header-center\">\n      <span class=\"prev-month\" @click.stop=\"goPrev\">{{leftArrow}}</span>\n      <span class=\"title\">{{title}}</span>\n      <span class=\"next-month\" @click.stop=\"goNext\">{{rightArrow}}</span>\n    </div>\n    <div class=\"header-right\">\n      <slot name=\"header-right\">\n      </slot>\n    </div>\n  </div>\n";
+	module.exports = "\r\n  <div class=\"full-calendar-header\">\r\n    <div class=\"header-left\">\r\n      <slot name=\"header-left\">\r\n      </slot>\r\n    </div>\r\n    <div class=\"header-center\">\r\n      <span class=\"prev-month\" @click.stop=\"goPrev\">{{leftArrow}}</span>\r\n      <span class=\"title\">{{title}}</span>\r\n      <span class=\"next-month\" @click.stop=\"goNext\">{{rightArrow}}</span>\r\n    </div>\r\n    <div class=\"header-right\">\r\n      <slot name=\"header-right\">\r\n      </slot>\r\n    </div>\r\n  </div>\r\n";
 
 /***/ },
 /* 19 */
 /***/ function(module, exports) {
 
-	module.exports = "\n  <div class=\"comp-full-calendar\">\n    <!-- header pick month -->\n    <fc-header :current-date.sync=\"currentDate\" :title-format=\"titleFormat\">\n\n      <div slot=\"header-right\">\n        <slot name=\"fc-header-right\">\n        </slot>\n      </div>\n    </fc-header>\n    <!-- body display date day and events -->\n    <fc-body :current-date=\"currentDate\" :events=\"events\" :month-names=\"monthNames\" :week-names=\"weekNames\">\n      <div slot=\"body-card\">\n        <slot name=\"fc-body-card\">\n        </slot>\n      </div>\n    </fc-body>\n  </div>\n";
+	module.exports = "\r\n  <div class=\"comp-full-calendar\">\r\n    <!-- header pick month -->\r\n    <fc-header :current-date.sync=\"currentDate\" :title-format=\"titleFormat\">\r\n\r\n      <div slot=\"header-right\">\r\n        <slot name=\"fc-header-right\">\r\n        </slot>\r\n      </div>\r\n    </fc-header>\r\n    <!-- body display date day and events -->\r\n    <fc-body :current-date=\"currentDate\" :events=\"events\" :month-names=\"monthNames\" :week-names=\"weekNames\">\r\n      <div slot=\"body-card\">\r\n        <slot name=\"fc-body-card\">\r\n        </slot>\r\n      </div>\r\n    </fc-body>\r\n  </div>\r\n";
 
 /***/ }
 /******/ ])

@@ -28,7 +28,7 @@
       },
       lang : {
         type : String,
-        default : 'zh'
+        default : 'es'
       },
       titleFormat : {
         type : String,
@@ -40,7 +40,7 @@
         type : Array,
         default () {
           return langSets[this.lang].monthNames
-        } 
+        }
       },
       weekNames : {
         type : Array,
@@ -61,7 +61,7 @@
       'fc-header' : require('./components/header')
     }
   }
-  
+
 </script>
 <style lang="scss">
   .comp-full-calendar{

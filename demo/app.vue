@@ -3,15 +3,15 @@
   	<p>
   		Here is the demo of vue-fullcalendar, no jquery fullcalendar.js required!
   	</p>
-    <full-calendar class="test-fc" :events="fcEvents" lang="en"></full-calendar>
+    <full-calendar class="test-fc" :events="fcEvents" lang="es"></full-calendar>
   </div>
 </template>
 <script>
 let demoEvents = [
     {
       title    : 'Sunny 728-730',
-      start    : '2016-07-25',
-      end      : '2016-07-27',
+      start    : '2016-10-20',
+      end      : '2016-11-01',
       cssClass : 'family'
     },
     {
