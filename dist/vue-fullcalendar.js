@@ -461,7 +461,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    },
 	    lang: {
 	      type: String,
-	      default: 'zh'
+	      default: 'es'
 	    },
 	    titleFormat: {
 	      type: String,
@@ -550,6 +550,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	    weekNames: ['周日', '周一', '周二', '周三', '周四', '周五', '周六'],
 	    monthNames: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '11月', '12月'],
 	    titleFormat: 'yyyy年MM月'
+	  },
+	  es: {
+	    weekNames: ['Dom', 'Lun', 'Mar', 'Mie', 'Jue', 'Vie', 'Sab'],
+	    monthNames: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+	    titleFormat: 'MMMM/yyyy'
 	  }
 	};
 
@@ -1193,8 +1198,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	  data: function data() {
 	    return {
 	      title: '',
-	      leftArrow: '<',
-	      rightArrow: '>'
+	      leftArrow: 'glyphicon glyphicon-chevron-left',
+	      rightArrow: 'glyphicon glyphicon-chevron-right'
 	    };
 	  },
 
@@ -1258,9 +1263,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	//       </slot>
 	//     </div>
 	//     <div class="header-center">
-	//       <span class="prev-month" @click.stop="goPrev">{{leftArrow}}</span>
+	//       <i class="prev-month glyphicon" :class="leftArrow" @click.stop="goPrev"></i>
 	//       <span class="title">{{title}}</span>
-	//       <span class="next-month" @click.stop="goNext">{{rightArrow}}</span>
+	//       <i class="next-month glyphicon" :class="rightArrow" @click.stop="goNext"></i>
 	//     </div>
 	//     <div class="header-right">
 	//       <slot name="header-right">
@@ -1274,7 +1279,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 18 */
 /***/ function(module, exports) {
 
-	module.exports = "\r\n  <div class=\"full-calendar-header\">\r\n    <div class=\"header-left\">\r\n      <slot name=\"header-left\">\r\n      </slot>\r\n    </div>\r\n    <div class=\"header-center\">\r\n      <span class=\"prev-month\" @click.stop=\"goPrev\">{{leftArrow}}</span>\r\n      <span class=\"title\">{{title}}</span>\r\n      <span class=\"next-month\" @click.stop=\"goNext\">{{rightArrow}}</span>\r\n    </div>\r\n    <div class=\"header-right\">\r\n      <slot name=\"header-right\">\r\n      </slot>\r\n    </div>\r\n  </div>\r\n";
+	module.exports = "\r\n  <div class=\"full-calendar-header\">\r\n    <div class=\"header-left\">\r\n      <slot name=\"header-left\">\r\n      </slot>\r\n    </div>\r\n    <div class=\"header-center\">\r\n      <i class=\"prev-month glyphicon\" :class=\"leftArrow\" @click.stop=\"goPrev\"></i>\r\n      <span class=\"title\">{{title}}</span>\r\n      <i class=\"next-month glyphicon\" :class=\"rightArrow\" @click.stop=\"goNext\"></i>\r\n    </div>\r\n    <div class=\"header-right\">\r\n      <slot name=\"header-right\">\r\n      </slot>\r\n    </div>\r\n  </div>\r\n";
 
 /***/ },
 /* 19 */
