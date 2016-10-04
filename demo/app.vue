@@ -3,7 +3,7 @@
   	<p>
   		Here is the demo of vue-fullcalendar, no jquery fullcalendar.js required!
   	</p>
-    <full-calendar class="test-fc" :events="fcEvents" lang="es"></full-calendar>
+    <full-calendar class="test-fc" :events="fcEvents" day-click="" lang="es"></full-calendar>
   </div>
 </template>
 <script>
@@ -16,8 +16,8 @@ let demoEvents = [
     },
     {
       title : 'Sunny 726-727',
-      start : '2016-07-26',
-      end : '2016-07-27',
+      start : '2016-10-29',
+      end : '2016-11-15',
       cssClass : ['home', 'work']
     },
     {
@@ -42,6 +42,9 @@ export default {
   events : {
     'changeMonth' (start, end, current) {
       console.log('changeMonth', start, end, current)
+    },
+    'dayClick' (day) {
+      console.log(day)
     }
   },
   components : {
@@ -52,5 +55,12 @@ export default {
 <style lang='scss'>
   .app{
     color:green;
+  }
+  .family{
+    background: #337ab7 !important;
+  }
+
+  .work{
+    background: #5cb85c !important;
   }
 </style>
