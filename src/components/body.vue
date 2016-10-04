@@ -301,7 +301,7 @@
         .events-day{
           cursor: pointer;
           flex:1;
-          min-height: 109px;
+          min-height: 99px;
           overflow: hidden;
           text-overflow: ellipsis;
           .day-number{
@@ -322,12 +322,13 @@
               margin-bottom:2px;
               color: rgba(0,0,0,.87);
               padding:0 0 0 4px;
-              height: 30px;
-              line-height: 30px;
+              height: 24px;
+              line-height: 24px;
               white-space: nowrap;
               overflow: hidden;
               text-overflow: ellipsis;
               box-shadow: 1px 1px 3px #333;
+              font-weight: bold;
               &.is-start{
                 margin-left: 4px;
                 // border-top-left-radius:4px;
