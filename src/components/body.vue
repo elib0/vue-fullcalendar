@@ -7,7 +7,7 @@
       <div calss="dates-bg">
         <div class="week-row" v-for="week in currentDates">
           <div class="day-cell" v-for="day in week"
-            :class="{'today' : day.isToday,
+              :class="{'today' : day.isToday,
               'not-cur-month' : !day.isCurMonth}">
             <p class="day-number">{{day.monthDay}}</p>
           </div>
@@ -117,6 +117,9 @@
       }
     },
     methods : {
+      clickEvent (day){
+        console.log(day)
+      },
       classNames (cssClass) {
         if(!cssClass) return ''
         // string  
@@ -319,11 +322,12 @@
               margin-bottom:2px;
               color: rgba(0,0,0,.87);
               padding:0 0 0 4px;
-              height: 18px;
-              line-height: 18px;
+              height: 30px;
+              line-height: 30px;
               white-space: nowrap;
               overflow: hidden;
               text-overflow: ellipsis;
+              box-shadow: 1px 1px 3px #333;
               &.is-start{
                 margin-left: 4px;
                 // border-top-left-radius:4px;

@@ -5,9 +5,9 @@
       </slot>
     </div>
     <div class="header-center">
-      <span class="prev-month" @click.stop="goPrev">{{leftArrow}}</span>
+      <i class="prev-month glyphicon" :class="leftArrow" @click.stop="goPrev"></i>
       <span class="title">{{title}}</span>
-      <span class="next-month" @click.stop="goNext">{{rightArrow}}</span>
+      <i class="next-month glyphicon" :class="rightArrow" @click.stop="goNext"></i>
     </div>
     <div class="header-right">
       <slot name="header-right">
@@ -29,8 +29,8 @@
     data () {
       return {
         title      : '',
-        leftArrow  : '<',
-        rightArrow : '>'
+        leftArrow  : 'glyphicon glyphicon-chevron-left',
+        rightArrow : 'glyphicon glyphicon-chevron-right'
       }
     },
     methods : {
